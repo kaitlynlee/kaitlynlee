@@ -1,0 +1,156 @@
+body, html{
+    height: 100%;
+}
+body{
+    background-image: url("../images/tree_bark.png");
+    margin: 0px;
+    color: #5b5b5a;
+    font-family: "My Custom Font";
+    font-size: 14pt;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url("../fonts/simplifica.ttf") format("truetype");
+}
+
+@font-face {
+            font-family: "milano";
+            src: url("../fonts/milano.ttf") format("truetype");
+        }
+.row {
+    display: block;
+    clear:both;
+}
+
+.header-cont{
+    width: 100%;
+    position: fixed;
+    background-image: url("../images/background.png");
+    top: 0px;
+    left: 0px;
+    z-index: 400;
+}
+.header{
+    max-width: 800px;
+    margin: auto;
+    height: 50px;
+    padding: 10px;
+}
+
+.footer-cont{
+    width: 100%;
+    background-color: #E6E5E4;
+    height: auto;
+}
+.footer{
+    max-width: 800px;
+    margin: auto;
+    height: 130px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.content{
+    padding: 10px;
+    max-width: 800px;
+    background-image: url("http://2.bp.blogspot.com/-gWrcD6e8K40/UH9OTRJgbrI/AAAAAAAAAug/SfaOc_65bss/s1600/nyroc128.png");
+    margin: 70px auto auto auto;
+    overflow: hidden;
+}
+.sliderwrap{
+    
+}
+.icon {
+    display: inline-block;
+    float: left;
+}
+.box {
+    float: left;
+    display: inline-block;
+    height: auto;
+}
+
+.one-third {
+    width: 32%;
+    margin-right: 1.33%;
+}
+
+.one-half{
+    width: 49%;
+    marin-right: 2%;
+}
+.two-thirds{
+    width: 64%;
+    margin-right: 2%;
+}
+#navi{
+    line-height: 50px;
+    height: inherit
+    margin: auto;
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+ #navi a, .categories a{
+    position: relative;
+    text-decoration: none;
+}
+
+ #navi a:before, .categories a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #5b5b5a;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+ #navi a:hover:before, .categories a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+ a, a:hover, a:visited, a:active{
+     letter-spacing: 2px;
+     font-size: 14pt;
+    color:#5b5b5a;
+}
+
+#social{
+    line-height: 50px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+}
+
+#social img{
+    height: 50px;
+    margin-left: 5px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+ 
+.footer a:hover{
+    text-decoration: underline;
+}
+
+#social a:hover{
+    text-decoration: none;
+}
+
+h3{font-family: "milano"}
+
+

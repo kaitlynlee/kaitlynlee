@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />        
+		<script src="js/modernizr.custom.js"></script>
+    <style>
+        .content{
+            margin: 115px auto auto auto;
+        }
+        .slideshow figure{
+            margin: -50px auto auto auto;
+        }
+        .cat-cont{
+            width: 100%;
+            position: fixed;
+            top: 70px;
+            background-color: #E6E5E4;
+            z-index: 400;
+            height: 45px;
+            font-family: 'milano';
+        }
+        .categories{
+            text-align: right;
+            font-size: 20px;
+            font-family: "milano";
+            max-width: 800px;
+            margin: auto;
+            height: 30px;
+            padding: 10px;
+            line-height: 30px;
+        }
+        h3{font-family: "milano", "Helvetica Neue"}
+        p{
+            letter-spacing: 1px;
+            font-size: 15pt;
+        }
+    </style>
+    <!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 130
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+<!-- End of SMOOTH SCROLL -->
+</head>
+
+<body>
+    <div class = "header-cont">
+        <div class = "header">
+            <div class = "icon">
+                <a href = "index.html"><img src = "images/icon.png" width = "50px" height = "50px"></a>
+            </div>
+            <div id = "navi">
+                <a href = "gallery.html">Portfolio</a> | <a href = "about.html">About</a> | <a href = "index.html">Home</a>
+            </div>
+        </div>
+    </div>
+    <div class = "cat-cont">
+        <div class = "categories">
+            <a href = "#photos">Photography</a> |  <a href = "#art">Art</a> | <a href = "#graphic">Graphic Design</a> | <a href = "#website">Website Design</a>
+        </div>
+    </div>
+    <div class= "content"> 
+        <div id="grid-gallery" class="grid-gallery">
+	<section class="grid-wrap">
+		<ul class="grid">
+			<li class="grid-sizer"></li><!-- for Masonry column width -->
+            <li id = "photos"><!--Photos -->
+				            <figure>
+								<img src="images/portfolio/photo/IMG_4307.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/photo/IMG_3414.jpg" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/photo/IMG_4297.jpg" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/photo/IMG_4299.jpg" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/photo/IMG_4300.jpg" alt="img05"/>
+							</figure>
+						</li>
+                            <li>
+							<figure>
+								<img src="images/portfolio/photo/IMG_4304.jpg" alt="img06"/>
+							</figure>
+			</li>
+                            
+            <li id = "art"><!--Art/graphic design -->
+				            <figure>
+								<img src="images/portfolio/graphic/giraffe.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/graphic/IMG_4227.jpg" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/graphic/Kioka%20Sketch.jpg" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/graphic/Sketch%20Winterlove%202.jpg" alt="img05"/>
+							</figure>
+						</li>
+                <li id = "graphic">
+							<figure>
+								<img src="images/portfolio/graphic/Screen%20Shot%202015-10-28%20at%2012.48.52%20AM.png" alt="img04"/>
+							</figure>
+						</li>
+                            <li>
+							<figure>
+								<img src="images/portfolio/graphic/Space%20copy.jpg" alt="img06"/>
+							</figure>
+			</li>
+                <li>
+							<figure>
+								<img src="images/portfolio/graphic/TF%20banner.png" alt="img07"/>
+							</figure>
+			</li>
+            <li id = "website"><!--Website -->
+				            <figure>
+								<img src="images/portfolio/website/Screen%20Shot%202013-02-17%20at%203.11.56%20PM.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/website/Screen%20Shot%202015-10-25%20at%208.07.56%20PM.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/website/Screen%20Shot%202016-04-14%20at%2011.31.58%20PM.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/website/Screen%20Shot%202016-04-15%20at%204.05.11%20PM.png" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/portfolio/website/Screen%20Shot%202016-04-15%20at%204.09.42%20PM.png" alt="img05"/>
+							</figure>
+						</li>
+		</ul>
+	</section><!-- // grid-wrap -->
+	<section class="slideshow">
+		<ul>
+			<li><!--photos-->
+				<figure>
+					<figcaption>
+						<h3>Stationery</h3>
+                        <p></p>
+					</figcaption>
+					<img src="images/portfolio/photo/IMG_4307.jpg" alt="img01"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Monkey in Singapore</h3>
+						<p></p>
+					</figcaption>
+					<img src="images/portfolio/photo/IMG_3414.jpg" alt="img02"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>University of California Santa Cruz</h3>
+					</figcaption>
+					<img src="images/portfolio/photo/IMG_4297.jpg" alt="img03"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Paris Baguette</h3>
+						<p></p>
+					</figcaption>
+					<img src="images/portfolio/photo/IMG_4299.jpg" alt="img04"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Butterfly</h3>
+						<p></p>
+					</figcaption>
+					<img src="images/portfolio/photo/IMG_4300.jpg" alt="img05"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Foam Cat</h3>
+						<p></p>
+					</figcaption>
+					<img src="images/portfolio/photo/IMG_4304.jpg" alt="img06"/>
+				</figure>
+			</li>
+            <li><!--art/graphic design-->
+				<figure>
+					<figcaption>
+						<h3>Giraffe</h3>
+                        <p>Drawing using Paper by 53. Full version <a href = "http://ilunoha.deviantart.com/art/Giraffe-334523749">here.</a></p>
+					</figcaption>
+					<img src="images/portfolio/graphic/giraffe.jpg" alt="img01"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Random Doodle</h3>
+						<p>Pencil on Canson XL series mix-media paper.</p>
+					</figcaption>
+					<img src="images/portfolio/graphic/IMG_4227.jpg" alt="img02"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Kioka Sketch</h3>
+                        <p>Drawn using Pixelmator. Full version <a href = "http://ilunoha.deviantart.com/art/Kioka-Sketch-377950182">here.</a></p>
+					</figcaption>
+					<img src="images/portfolio/graphic/Kioka%20Sketch.jpg" alt="img03"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Peacock (Comission)</h3>
+						<p>Commission for WinterLove on Rescreatu. Drawn using Paper by 53 and Pixelmator. Full version <a href = "http://ilunoha.deviantart.com/art/Peacock-Winterlove-356667859">here</a>.</p>
+					</figcaption>
+					<img src="images/portfolio/graphic/Sketch%20Winterlove%202.jpg" alt="img05"/>
+				</figure>
+			</li>
+            <li>
+				<figure>
+					<figcaption>
+						<h3>Banner Comissikon</h3>
+						<p>Banner comission for Gardenia on Rescreatu. Made using Pixelmator. Full version <a href = "">here</a>.</p>
+					</figcaption>
+					<img src="images/portfolio/graphic/Screen%20Shot%202015-10-28%20at%2012.48.52%20AM.png" alt="img04"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Space</h3>
+                        <p>Made using Pixelmator. Full version <a href = "">here</a>.</p>
+					</figcaption>
+					<img src="images/portfolio/graphic/Space%20copy.jpg" alt="img06"/>
+				</figure>
+			</li>
+            <li>
+				<figure>
+					<figcaption>
+						<h3>Factory Banner</h3>
+                        <p>Banner for the Factory thread on Rescreatu. Made using Pixelmator. </p>
+					</figcaption>
+					<img src="images/portfolio/graphic/TF%20banner.png" alt="img07"/>
+				</figure>
+			</li>
+            <li><!--website-->
+				<figure>
+					<figcaption>
+						<h3>Profile for Giveaway</h3>
+						<p>Profile design for Rescreatu for a giveaway. </p>
+					</figcaption>
+					<img src="images/portfolio/website/Screen%20Shot%202013-02-17%20at%203.11.56%20PM.png" alt="img01"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Personal Profile</h3>
+                        <p>Profile on Rescreatu designed for personal use.</p>
+					</figcaption>
+					<img src="images/portfolio/website/Screen%20Shot%202015-10-25%20at%208.07.56%20PM.png" alt="img02"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Sample Restaurant website</h3>
+                        <p>This is a sample restaurant website made for a FBLA Website Design prompt. Live version <a href = "file:///Users/meimak/Desktop/fbla%20sample/index.html">here</a>.</p>
+					</figcaption>
+					<img src="images/portfolio/website/Screen%20Shot%202016-04-14%20at%2011.31.58%20PM.png" alt="img03"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Pacific Villa Contact Page</h3>
+						<p>This was made for FBLA's E-Business competiton. It has a customized map widget, interactive contact form, and contact information. Live version <a href = "http://ebiz2016.hhsfbla.com/contact.php">here</a>. </p>
+					</figcaption>
+					<img src="images/portfolio/website/Screen%20Shot%202016-04-15%20at%204.05.11%20PM.png" alt="img04"/>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<figcaption>
+						<h3>Pacific Villa Features page </h3>
+                        <p>This page was created for FBLA's E-business competition. Live version <a href = "http://ebiz2016.hhsfbla.com/features.php">here</a>.</p>
+					</figcaption>
+					<img src="images/portfolio/website/Screen%20Shot%202016-04-15%20at%204.09.42%20PM.png" alt="img05"/>
+				</figure>
+			</li>
+		</ul>
+		<nav>
+			<span class="icon nav-prev"></span>
+			<span class="icon nav-next"></span>
+			<span class="icon nav-close"></span>
+		</nav>
+		<div class="info-keys icon">Navigate with arrow keys</div>
+	</section><!-- // slideshow -->
+</div><!-- // grid-gallery -->
+		
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpGridGallery.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+        </div>
+    
+    <div class = "footer-cont">
+        <div class = "footer">
+            <div class = "box one-third">
+                <h3>Resources used:</h3>
+                <a href = "http://supersimpleslider.com/">Image Slider</a><br>
+                <a href = "http://www.graphicsfuel.com/2013/12/social-media-line-icons/">Social Media Icons</a><br>
+                <a href = "http://tympanus.net/codrops/2014/03/21/google-grid-gallery/">Image Gallery</a> 
+            </div>
+            <div class = "box one-third">
+                <h3>Contact</h3>
+                <p>Email: kaitlynlee@sbcglobal.net<br></p>
+            </div>
+            <div class = "box one-third">
+                <div class = "row">
+                    <h3 style = "float: right">Social Media</h3>
+                </div>
+                <div class = "row">
+                    <div id = "social">
+                        <a href= "http://instagram.com/lochbell"><img src = "images/social/insta.png"></a><a href= "http://lochbell.deviantart.com"><img src = "images/social/devart.png"></a><a href= "http://souppot.tumblr.com"><img src = "images/social/tumblr.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

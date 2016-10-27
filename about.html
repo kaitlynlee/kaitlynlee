@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="/images/favicon-16x16.png">
+
+<link rel="stylesheet" type="text/css" href= "css/main.css">
+    <style>
+        body {
+            font-size: 15pt;
+            letter-spacing: 1px;
+        }
+        
+        label {
+        display:block;
+        margin-top:20px;
+        letter-spacing:2px;
+        }
+
+        .body {
+            display:block;
+            margin:0 auto;
+            width: 100%;
+        }
+
+        form {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        input, textarea
+        {
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+            width: 100%;
+            display: block;
+            border-radius: 5px; 
+        }
+
+        input
+        {
+            height: 30px;
+        }
+
+        input:focus, textarea:focus{
+            border: 1px solid #97d6eb;
+        }
+
+        #submit{
+            border-radius: 0px;
+            width: 80px;
+            height: 30px;
+        }
+
+        #submit:hover    
+        {
+            background-color: #CCCCCC;
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "header-cont">
+        <div class = "header">
+            <div class = "icon">
+                <a href = "index.html"><img src = "images/icon.png" width = "50px" height = "50px"></a>
+            </div>
+            <div id = "navi">
+                <a href = "gallery.html">Portfolio</a> | <a href = "about.html">About</a> | <a href = "index.html">Home</a>
+            </div>
+        </div>
+    </div>
+    <div class = "content">
+        <div class = "row">
+        <img src = "images/24649002.png" style = "float: left"/>Kaitlyn is an aspiring web designer with 4 years of experience. She aspires for both functionality as well as aesthetics, and hopes that these values are reflected in her work.
+        </div>
+        <div class = "row">
+        <div class = "box one-third">
+            <h3> Leave a note </h3>
+            
+        </div>
+        <div class = "box two-thirds">
+            <section class="body">
+                <a name = "form"></a>
+                <form method = "post" action="contact.php#form">
+                    <div class = "row">
+                        <div class = "box one-third">
+                            <label>Name *</label>
+                            <input name="name" placeholder="Name">
+                        </div>
+                        <div class = "box one-third">
+                            <label>Email *</label>
+                            <input name="email" type="email" placeholder="Email">
+                        </div>
+                        <div class = "box one-third">
+                            <label>Phone Number</label>
+                            <input name="number" type="tel" placeholder="Phone Number">
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <div class = "row">
+                        <label>Subject *</label>
+                        <input name="subject" type="text" placeholder="Subject">
+                        </div>
+                    <div class = "row">
+                        <label>Inquiry *</label>
+                        <textarea name="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <br>
+                    <div class = "row">
+                        <input id="submit" name="submit" type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+
+    </div>
+    </div>
+    
+    <div class = "footer-cont">
+        <div class = "footer">
+            <div class = "row">
+            <div class = "box one-third">
+                <h3>Resources used:</h3>
+                <a href = "http://supersimpleslider.com/">Image Slider</a><br>
+                <a href = "http://www.graphicsfuel.com/2013/12/social-media-line-icons/">Social Media Icons</a><br>
+                <a href = "http://tympanus.net/codrops/2014/03/21/google-grid-gallery/">Image Gallery</a> 
+            </div>
+            <div class = "box one-third">
+                <h3>Contact</h3>
+                <p>Email: kaitlynlee@sbcglobal.net<br></p>
+            </div>
+            <div class = "box one-third">
+                <div class = "row">
+                    <h3 style = "float: right">Social Media</h3>
+                </div>
+                <div class = "row">
+                    <div id = "social">
+                        <a href= "http://instagram.com/lochbell"><img src = "images/social/insta.png"></a><a href= "http://lochbell.deviantart.com"><img src = "images/social/devart.png"></a><a href= "http://souppot.tumblr.com"><img src = "images/social/tumblr.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
