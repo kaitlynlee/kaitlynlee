@@ -1,0 +1,125 @@
+body {font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+background:url(http://www.halfbakedharvest.com/wp-content/uploads/2013/07/Grilled-Tex-Mex-Quinoa-Stuffed-Sweet-Potatoes-Skins-13.jpg) center right no-repeat fixed;
+; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+body p 
+{
+    font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif
+}
+
+#wrapper 
+{
+    height: 100%;
+    width: 100%;
+}
+
+#content
+{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin-top: 100px;
+    margin-left: 375px;
+    background: url(images/background.png);
+    padding: 20px;
+    color: white;
+}
+
+#links
+{
+    list-style-position: inside;
+    font-size: 14pt;
+    z-index: 20;
+    text-align:right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    width: 100%;
+    background-color:black;
+    color: white;
+}
+
+#links a, #links a:visited
+{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    background-color:black;
+    border-left-color: white;
+    border-right-color: white;
+    transition: all 0.4s ease-out;
+    -o-transition-transition:  all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+}
+
+#links ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#links li 
+{
+    float:right;
+    padding:0px 0px 0px 15px;
+}
+#links li a
+{
+    display:block;
+    font-weight:normal;
+    line-height:50px;
+    margin:0px;
+    padding:0px 25px;
+    text-align:center;
+    text-decoration:none;
+}
+
+#links li ul
+{
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:150px;
+    z-index:200;
+}
+
+#links li:hover ul
+{
+    display:block; 
+}
+
+#links li li {
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:150px;
+}
+
+#links a:hover, #links a:active
+{
+    background-color: white;
+    color: black;
+}
+
+#sidebar
+{
+    z-index: 20;
+    position: fixed;
+    top: 100px;
+    left: 25px;
+    background: url(images/background.png);
+    width: 300px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
