@@ -1,11 +1,15 @@
 body {font-family: Rockwell,"Courier Bold",Courier,Georgia,Times,"Times New Roman",serif;
+    
 background:url(http://www.halfbakedharvest.com/wp-content/uploads/2013/07/Grilled-Tex-Mex-Quinoa-Stuffed-Sweet-Potatoes-Skins-13.jpg) center right no-repeat fixed;
 ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;}
-
+body h2 
+{
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
 body p 
 {
     font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif
@@ -19,29 +23,53 @@ body p
 
 #content
 {
-    position: relative;
-    top: 0px;
+    position: fixed;
+    top: 70px;
     right: 0px;
-    margin-top: 100px;
+    bottom: 0px;
     margin-left: 375px;
-    background: url(images/background.png);
+    background: url(http://2.bp.blogspot.com/-vS-4StXB67A/VjBgIjyPIlI/AAAAAAAAByo/b2Tp-6A_LEI/s1600/background.png);
     padding: 20px;
     color: white;
+    overflow: auto;
+    z-index: 0;
 }
 
+#navbar
+{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    padding-right: 20px;
+    color: white;
+}
+#icon 
+{
+    display: inline; 
+    float: left;
+}
+#icon img
+{
+    height: 45px;
+}
+#icon h1 {
+
+    display: inline;
+}
 #links
 {
+    float: right;
     list-style-position: inside;
     font-size: 14pt;
+    test-align: right;
     z-index: 20;
-    text-align:right;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    padding: 10px;
-    width: 100%;
     background-color:black;
     color: white;
+    margin-right: 10px;
 }
 
 #links a, #links a:visited
@@ -117,7 +145,7 @@ body p
     position: fixed;
     top: 100px;
     left: 25px;
-    background: url(images/background.png);
+    background: url(http://2.bp.blogspot.com/-vS-4StXB67A/VjBgIjyPIlI/AAAAAAAAByo/b2Tp-6A_LEI/s1600/background.png);
     width: 300px;
     color: white;
     padding: 10px;
